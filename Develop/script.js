@@ -10,6 +10,14 @@ function writePassword() {
   passwordText.value = password;
 
 }
+
+var newPassword = prompt("Do you need a new password?");
+var confirmPassword = confirm("Would you like lowercase letters?")
+
+if (confirmPassword) {
+  
+}
+
   function getRandomLower() {
     return(Math.floor(Math.random() * 26) + 97);
   }
