@@ -1,44 +1,78 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-
+if (generateBtn) = 
 
 // Write password to the #password input
 function writePassword() {
+  
   // var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-  var password = "abcdef"
+  //var passwordText = document.querySelector("#password");
+  //var password = "abcdef"
 
-  passwordText.value = password;
-
-}
+  //passwordText.value = password;
 
 // var newPassword = prompt("Do you need a new password?");
-// var confirmPassword = confirm("Would you like lowercase letters?")
 
-// if (confirmPassword) {
+var getRandomLowercase = confirm("Would you like lowercase letters?")
+if (getRandomLowercase) {
+  alert("ok, include random lowercase");
+}
+else {
+  alert("skip random lowercase")
+}
 
-  function getRandomLower() {
-    return (Math.floor(Math.random() * 26) + 97);
-  }
+var getRandomUppercase = confirm("Would you like uppercase letters?");
+if (getRandomUppercase) {
+  alert("ok, include random uppercase");
+}
+else {
+  alert("skip random uppercase")
+}
 
-  function getRandomUpper() {
-    return (Math.floor(Math.random() * 26) + 65);
-  }
+var getRandomNumber = confirm("Would you like random numbers?")
+if (getRandomNumber) {
+  alert("ok, include random numbers");
+}
+else {
+  alert("skip random numbers")
+}
 
-  function getRandomNumber() {
-    return (Math.floor(Math.random() * 10) + 48)
-  }
+var getRandomSymbol = confirm("Would you like random symbols?")
+if (getRandomSymbol) {
+  alert("ok, include random symbols");
+}
 
-  function getRandomSymbol() {
-    const symbols = '!@#$%^&*(){}[]=<>/,.';
-    return symbols[Math.floor(Math.random() * symbols.length)];
-  }
-
-  console.log(getRandomLower());
-  console.log(getRandomUpper());
-  console.log(getRandomNumber());
-  console.log(getRandomSymbol());
+else {
+  alert("skip random symbols")
+}
 
 
-  // Add event listener to generate button
-  generateBtn.addEventListener("click", writePassword);
+
+
+
+
+function getRandomLowercase() {
+  return (Math.floor(Math.random() * 26) + 97);
+}
+
+function getRandomUppercase() {
+  return (Math.floor(Math.random() * 26) + 65);
+}
+
+function getRandomNumber() {
+  return (Math.floor(Math.random() * 10) + 48)
+}
+
+function getRandomSymbol() {
+  const symbols = '!@#$%^&*(){}[]=<>/,.';
+  return symbols[Math.floor(Math.random() * symbols.length)];
+}
+
+console.log(getRandomLowercase());
+console.log(getRandomUppercase());
+console.log(getRandomNumber());
+console.log(getRandomSymbol());
+
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
