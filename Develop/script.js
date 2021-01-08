@@ -28,13 +28,13 @@ var generateBtn = document.querySelector("#generate");
 //var passwordCharset = 0;
 //var newPassword = 0;
 
-function generatePassword()
-  var passwordLength = prompt("Your password must be between 8 and 128 characters");
-  if (passwordLength < 8, passwordLength > 128) {
-    alert("Your password did not meet the criteria, please do over")
-  } else {
-    return;
-  }
+// function generatePassword()
+  // var passwordLength = prompt("Your password must be between 8 and 128 characters");
+  // if (passwordLength < 8, passwordLength > 128) {
+    // alert("Your password did not meet the criteria, please do over")
+  // } else {
+    // return;
+  // }
 
   //var newPassword = alert("Do you need a new password?");
   //if (newPassword) {
