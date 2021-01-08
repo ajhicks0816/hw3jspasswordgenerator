@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 //Write password to the #password input
-//function writePassword()
+// function writePassword()
 //var password = generatePassword();
 //var passwordText = document.querySelector("#password");
 //passwordText.value = password;
@@ -28,6 +28,11 @@ var generateBtn = document.querySelector("#generate");
 //var passwordCharset = 0;
 //var newPassword = 0;
 
+var getRandomLowercaseChar = "abcdefghijklmnopqrstuvwxyz"
+var getRandomUppercaseChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var getRandomNumberChar = "123456789"
+var getRandomSymbolChar = "!@#$%^&*(){}[]=<>/,."
+
 // function generatePassword()
   // var passwordLength = prompt("Your password must be between 8 and 128 characters");
   // if (passwordLength < 8, passwordLength > 128) {
@@ -36,12 +41,12 @@ var generateBtn = document.querySelector("#generate");
     // return;
   // }
 
-  //var newPassword = alert("Do you need a new password?");
-  //if (newPassword) {
-    //alert("let's get started");
-  //} else {
-
-  //}
+  // var writePassword = prompt("Do you need a new password?");
+  // if (writePassword) {
+    // alert("let's get started");
+  // } else {
+      // return;       
+  // }
 
   var getRandomLowercase = prompt("Do you want lowercase letters?")
   if (getRandomLowercase) {
